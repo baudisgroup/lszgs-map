@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="https://www.lifescience-graduateschool.uzh.ch/static/css/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="https://www.lifescience-graduateschool.uzh.ch/static/css/MarkerCluster.css" />
+<link rel="stylesheet" type="text/css" href="https://www.lifescience-graduateschool.uzh.ch/static/css/MarkerCluster.Default.css" />
+
+
+<script type='text/javascript' src='https://www.lifescience-graduateschool.uzh.ch/static/js/leaflet.js'></script>
+<script type='text/javascript' src='https://www.lifescience-graduateschool.uzh.ch/static/js/leaflet.markercluster.js'></script>
