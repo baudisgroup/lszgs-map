@@ -3,16 +3,24 @@ var map = L.map( 'map', {
   center: [10.0, 5.0],
   minZoom: 2,
   maxZoom: 6,
-  zoom: 2
+  zoom: 3
 }).setView([35, 6.143158]);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+// using mapbox, better map but not free
+// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+//     maxZoom: 18,
+//     id: 'mapbox.streets',
+//     accessToken: 'pk.eyJ1IjoibW9sYmlvIiwiYSI6ImNqZjE2ZzUycTA4dzQzM3F4aGg3d3Byc3QifQ.GiU2OC0tqT9aZ35b1TAFWw'
+// }).addTo(map);
+
+
+// using openstreetmap, free
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18,
     id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoibW9sYmlvIiwiYSI6ImNqZjE2ZzUycTA4dzQzM3F4aGg3d3Byc3QifQ.GiU2OC0tqT9aZ35b1TAFWw'
 }).addTo(map);
-
 
 
 
